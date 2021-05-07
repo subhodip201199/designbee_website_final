@@ -154,14 +154,16 @@
 			})
 			.then(function (data) {
 
-				
+				var vid_url;
 				
 				
 				for(var i=0; i<data.length; i++){
 					if(data[i].content_type == 'image') {
 						$('#left_content').append('<div class="card"> <img src="http://13.232.124.38/' + data[i].id + '_blog_picture.jpg"  style="height:200px;" />' + data[i].blog_content + '</div>');
 					}else{
-						$('#left_content').append('<div class="card"> <iframe width="100%" height="200" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>' + data[i].blog_content + '</div>');
+						vid_url =  data[i].video_link;
+						$('#left_content').append('<div class="card"> <iframe width="100%" height="200" src="' + vid_url + '"></iframe>' + data[i].blog_content + '</div>');
+						//$('#left_content').append("<div class='card'> <iframe width='100%' height='200' src='https://www.youtube.com/embed/tgbNymZ7vqY'></iframe>" + data[i].blog_content + "</div>");
 
 					}
 				}
