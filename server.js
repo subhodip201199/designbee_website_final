@@ -26,7 +26,7 @@ var fs = require("fs");
 
 //--------------------------
 
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 80
 
 //const routes = require('./routes/index')
 
