@@ -130,16 +130,16 @@ $('ul.slimmenu').slimmenu(
 		});
 	});	
 	
-	$(document).ready(function(){
-		$('.slider3').bxSlider({
-			adaptiveHeight: true,
-			touchEnabled: true,
-			pager: false,
-			controls: false,
-			auto: true,
-			slideMargin: 0,
-		});
-	});	
+	//$(document).ready(function(){
+	//	$('.slider3').bxSlider({
+	//		adaptiveHeight: true,
+	//		touchEnabled: true,
+	//		pager: false,
+	//		controls: false,
+	//		auto: true,
+	//		slideMargin: 0,
+	//	});
+	//});	
 
 	
 	$(document).ready(function(){
