@@ -1471,7 +1471,20 @@
 				'<h3><p><span>' + data[i].name + '</p></span></p></h3></div></li>');*/
 				'<div class="test"><div class="icon-test">&#xf10e;</div>' + data[i].review + ''+
 				'<h3><p><span>' + data[i].name + '</p></span></p></h3></div>');
-			}})
+			}
+		
+			$(document).ready(function(){
+				$('.slider3').bxSlider({
+					adaptiveHeight: true,
+					touchEnabled: true,
+					pager: false,
+					controls: false,
+					auto: true,
+					slideMargin: 0,
+				});
+			});	
+		})
+			
 		.catch(function (err) {
 			console.log('error: ' + err);
 		});
